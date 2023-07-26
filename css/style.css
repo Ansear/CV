@@ -33,7 +33,7 @@ h2{
 .imagen{
     text-align: center; 
 }
-img{
+.imagen img{
     margin-top: 15%;
     border:solid 2px black;
     border-radius:50%;
