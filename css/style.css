@@ -15,26 +15,23 @@ h2{
     color:var(--blueB);
     font-family: Anton;
 }
-.separator{
-    height: 100vh;
-}
+
 .container{
     display:flex; 
     justify-content: space-between;
     width: 100%;
-    height: 100vh;
 }
 .subContL{
     background-color: var(--blue);
     width: 33.3%;
     padding-left: 10px;
-    height: 100vh;
+
 }
 .imagen{
     text-align: center; 
 }
 .imagen img{
-    margin-top: 15%;
+    margin-top: 8%;
     border:solid 2px black;
     border-radius:50%;
     width: 50%; 
@@ -46,11 +43,22 @@ h2{
 }
 .info p{
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 900;
 }
 .info span{
     font-size: 20px;
     font-weight: 400;
+    color:var(--ligth)
+}
+.info a{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    color: var(--extraL);
+    text-decoration: none;
+}
+.info img{
+    width: 50px;
 }
 .perfil{
     text-align: justify;
@@ -68,6 +76,7 @@ h2{
     line-height: 22px;
     margin-top: 3%;
     font-size: 20px;
+    color:var(--extraL)
 }
 .subContC{
     background-color:var(--blueL);
@@ -83,15 +92,33 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30rem;
 }
-.stacks p {
-    font-weight: 700;
-    padding-left: 10px;
+.stack{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
 }
-.stacks div{
+.stack p {
     font-weight: 700;
-    padding-left: 10px;
+}
+.progres{
+    font-weight: 700;
+}
+.stacks p{
+    font-weight: 700;
+}
+.stacksImg{
+    width: 50px;
+}
+.bloque{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 8rem;
+    padding-left: 7px;
+}
+.bloque span{
+    color:var(--extraL)
 }
 progress::-moz-progress-bar{
     background-color: var(--blueB);
@@ -103,10 +130,11 @@ progress{
     background-color: white;
     border:solid 1px var(--blueB);
 }
-
-
 hr{
-    border: solid 1px black;
+    border: dashed 1px var(--blueB);
+}
+.separator{
+    border:solid 1px black;
 }
 .subContR{
     background-color: var(--extraL);
@@ -157,9 +185,19 @@ hr{
 }
 
 .experiencia p{
-    font-weight: 700;
+    font-weight: 700;    
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    
 }
 
 .experiencia span{
+    display: flex;
+    align-items: center;
     font-weight: 400;
+    padding-left: 5px;
+}
+.experiencia img{
+    width: 38px;
 }
