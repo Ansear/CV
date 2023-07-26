@@ -93,6 +93,18 @@ img{
     font-weight: 700;
     padding-left: 10px;
 }
+progress::-moz-progress-bar{
+    background-color: var(--blueB);
+}
+progress::-webkit-progress-bar{
+    background-color: var(--blueB);
+}
+progress{
+    background-color: white;
+    border:solid 1px var(--blueB);
+}
+
+
 hr{
     border: solid 1px black;
 }
