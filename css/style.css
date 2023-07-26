@@ -1,12 +1,9 @@
 :root{
-    --violeta:#7400b8;
-    --violetaL:#6930c3;
-    --blueB:#5e60ce;
-    --blue:#5390d9;
-    --blueL:#4ea8de;
-    --ligth:#48bfe3;
-    --extraL:#64dfdf;
-    --greenL:#80ffdb;
+    --blueB:#03045e;
+    --blue:#0077b6;
+    --blueL:#00b4d8;
+    --ligth:#90e0ef;
+    --extraL:#caf0f8;
 }
 *{
     box-sizing: border-box;
@@ -15,10 +12,11 @@
     font-family: signika Negative;
 }
 h2{
+    color:var(--blueB);
     font-family: Anton;
 }
 .separator{
-    height: 102vh;
+    height: 100vh;
 }
 .container{
     display:flex; 
@@ -27,10 +25,10 @@ h2{
     height: 100vh;
 }
 .subContL{
-
+    background-color: var(--blue);
     width: 33.3%;
     padding-left: 10px;
-    height: 102vh;
+    height: 100vh;
 }
 .imagen{
     text-align: center; 
@@ -46,6 +44,14 @@ img{
     row-gap: 5px;
     margin-top: 5%;
 }
+.info p{
+    font-size: 25px;
+    font-weight: 700;
+}
+.info span{
+    font-size: 20px;
+    font-weight: 400;
+}
 .perfil{
     text-align: justify;
     width: 98%;
@@ -55,14 +61,16 @@ img{
     margin-top: 5%;
     text-decoration: underline;
     text-align: center;
+    font-size: 40px;
 }
 
 .perfil p{
     line-height: 22px;
     margin-top: 3%;
+    font-size: 20px;
 }
 .subContC{
-
+    background-color:var(--blueL);
     width: 33.3%;
 }
 
@@ -89,6 +97,7 @@ hr{
     border: solid 1px black;
 }
 .subContR{
+    background-color: var(--extraL);
     width: 33.4%;
 
 }
