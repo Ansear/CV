@@ -248,7 +248,7 @@ progress{
 }
 
 .estudios{
-    margin: 10px 10px 20px 10px ;
+    margin: 20px 10px 20px 10px ;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -273,7 +273,7 @@ progress{
     box-shadow: 1px 1px 10px 1px var(--blueB);
 }
 .experiencia{
-    margin: 10px 0px 20px 10px ; 
+    margin: 30px 0px 20px 10px ; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -369,7 +369,7 @@ progress{
 
 @media (min-width:360px) and (max-width:530px) {
     .container{
-        grid-template-rows: .2fr 1fr .6fr ;
+        grid-template-rows: .2fr 1fr .5fr ;
     }
     .perfil p{
         width: 95%;
