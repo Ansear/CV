@@ -205,6 +205,7 @@ progress{
 .subContR{
     background-color: var(--extraL);
     width: 33.4%;
+    overflow-y: auto;
 }
 
 .subContR h2{
@@ -227,6 +228,7 @@ progress{
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    width: 60%;
     background-color: var(--ligth);
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px var(--blueB);
@@ -265,7 +267,7 @@ progress{
 .estudi {
     background-color: var(--ligth);
     border-radius:15px;
-    width: fit-content;
+    width: 100%;
     padding: 20px;
     box-shadow: 1px 1px 10px 1px var(--blueB);
 }
@@ -306,4 +308,39 @@ progress{
 }
 .tinca img{
     width: 38px;
+}
+
+@media (min-width:426px) and (max-width: 1038px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: .2fr 1fr .4fr ;
+    }
+    .subContL{
+        width: 100%;
+    }
+    .subContC{
+        width: 100%;
+    }
+    .subContR{
+        width: 100%;
+    }
+    .ingles{
+        width: 70%;
+    }
+    .estudi{
+        width: 70%;
+    }
+    .tinca{
+        width: 70%;
+    }
+    .info span{
+        font-size: 17px;
+    }
+    .separator{
+        display: none;
+    }
+    .info{
+        width:70%;
+    }
 }
