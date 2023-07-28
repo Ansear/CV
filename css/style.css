@@ -37,9 +37,9 @@ h2{
 }
 .imagen img{
     margin-top: 8%;
-    border:solid 2px black;
+    border:solid 3px var(--extraL);
     border-radius:50%;
-    width: 50%; 
+    width: 65%; 
 }
 .info{
     margin-top: 5%;
@@ -136,6 +136,7 @@ h2{
     border:solid 1px var(--extraL);
     border-radius: 10px;
     background-color: var(--ligth);
+    margin:10px 0px;
 }
 .bloque span{
     color:var(--blueB)
@@ -310,20 +311,22 @@ progress{
     width: 38px;
 }
 
-@media (min-width:426px) and (max-width: 1038px) {
+@media (min-width:360px) and (max-width: 1038px) {
     .container{
         display: grid;
         grid-template-columns: 1fr  ;
-        grid-template-rows: .2fr 1fr .4fr ;
+        grid-template-rows: .2fr 1fr .5fr ;
     }
     .subContL{
         width: 100%;
     }
     .subContC{
         width: 100%;
+        overflow-y: hidden;
     }
     .subContR{
         width: 100%;
+        overflow-y: hidden;
     }
     .ingles{
         width: 70%;
@@ -334,13 +337,62 @@ progress{
     .tinca{
         width: 70%;
     }
-    .info span{
-        font-size: 17px;
+    .info p{
+        font-size: 28px;
     }
+    .info span{
+        font-size: 24px;
+    }       
+
     .separator{
         display: none;
     }
     .info{
-        width:70%;
+        width:50%;
+    }
+    .perfil p{
+        width: 70%;
+    }
+}
+
+@media (min-width:530px) and (max-width:796px) {
+    .info{
+        width:78%;
+    }
+    .container{
+        grid-template-rows: .2fr 1fr .6fr ;
+    }
+    .perfil p{
+        width: 80%;
+    }
+}
+
+@media (min-width:360px) and (max-width:530px) {
+    .container{
+        grid-template-rows: .2fr 1fr .6fr ;
+    }
+    .perfil p{
+        width: 95%;
+    }
+    .info{
+        width:90%;
+    }
+    .info p{
+        font-size: 18px;
+    }
+    .info span{
+        font-size: 17px;
+    }
+    .stacks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .par{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        width: 70%;
+        align-items: center;
     }
 }
