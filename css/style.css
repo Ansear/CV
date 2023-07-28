@@ -22,10 +22,11 @@ h2{
     width: 100%;
 }
 .subContL{
-    background-color: var(--blue);
+    background-color: var(--extraL);
     width: 33.3%;
-    padding-left: 10px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .imagen{
     text-align: center; 
@@ -38,60 +39,75 @@ h2{
 }
 .info{
     display: grid;
-    row-gap: 5px;
+    grid-template-rows: 1fr;
+    row-gap: 5%;
     margin-top: 5%;
+    width: 95%;
 }
-.info p{
+.info>div{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ligth);
+    border-radius: 10px;
+    height: auto;
+    border:solid 1px var(--blueB);
+    padding: 5px;
+    gap: 15px;
+    box-shadow: 1px 3px 10px 1px rgb(0, 0, 0);
+}
+
+.info>div p{
     font-size: 25px;
     font-weight: 900;
-}
-.info span{
-    font-size: 20px;
-    font-weight: 400;
-    color:var(--ligth)
+    color:var(--blueB)
 }
 .info a{
     width: fit-content;
-    display: flex;
-    flex-direction: column;
-    color: var(--extraL);
-    text-decoration: none;
+    height: fit-content;
+}
+
+.info>div span{
+    font-size: 18px;
+    color:var(--blueB)
 }
 .info img{
     width: 50px;
 }
+
 .perfil{
     text-align: justify;
-    width: 98%;
-    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .perfil h2{
     margin-top: 5%;
     text-decoration: underline;
     text-align: center;
     font-size: 40px;
+    color: var(--blueB);
 }
-
 .perfil p{
+    width: 95%;
     line-height: 22px;
     margin-top: 3%;
     font-size: 20px;
-    color:var(--extraL)
+    color:var(--blueB)
 }
 .subContC{
-    background-color:var(--blueL);
+    background-color:var(--extraL);
     width: 33.3%;
+
 }
 
 .subContC h2{
-    margin-top: 5%;
+    margin-top: 8%;
     text-align: center;
     font-size: 40px;
+    color:var(--blueB)
 }
 .stacks{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-top: 3%;
 }
 .stack{
     display: flex;
@@ -110,36 +126,49 @@ h2{
 .stacksImg{
     width: 50px;
 }
+.par{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr .1fr .1fr;
+}
 .bloque{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     height: 8rem;
-    padding-left: 7px;
+    width: 95%;
+    border:solid 1px var(--extraL);
+    border-radius: 10px;
+    background-color: var(--ligth);
 }
 .bloque span{
-    color:var(--extraL)
+    color:var(--blueB)
 }
 progress::-moz-progress-bar{
     background-color: var(--blueB);
 }
-progress::-webkit-progress-bar{
+progress::-webkit-progress-value{
     background-color: var(--blueB);
+}
+progress::-webkit-progress-bar{
+    background-color: var(--extraL);
+    border-radius: 5px; 
 }
 progress{
     background-color: white;
     border:solid 1px var(--blueB);
+    border-radius: 5px;
 }
-hr{
-    border: dashed 1px var(--blueB);
-}
+
 .separator{
-    border:solid 1px black;
+    border:solid 1px var(--blueB);
 }
 .subContR{
     background-color: var(--extraL);
     width: 33.4%;
-
+    
 }
 
 .subContR h2{
