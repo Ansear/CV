@@ -17,17 +17,21 @@ h2{
 }
 
 .container{
-    display:flex; 
-    justify-content: space-between;
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    height: 100%;
+    background-color: var(--blueB);
+    padding: 10px;
+    column-gap: 10px;
 }
 
 /*SECCION DE LA IZQUIERDA*/
 
 .subContL{
     background-color: var(--extraL);
-    width: 33.3%;
+    grid-column: 1/2;
+    border:solid 1px blue;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +52,7 @@ h2{
     flex-direction: column;
     background-color: var(--ligth);
     border-radius: 10px;
-    height: auto;
+    /* height: auto; */
     border:solid 1px var(--blueB);
     padding: 5px;
     gap: 15px;
@@ -89,8 +93,10 @@ h2{
 /*SECCION DEL CENTRO*/
 
 .subContC{
+    border:solid 1px var(--blueB);
+    border-radius: 10px;
     background-color:var(--extraL);
-    width: 33.3%;
+    grid-column: 2/3;
     overflow-y: auto;
 }
 
@@ -131,7 +137,7 @@ h2{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 8rem;
+    /* height: 8rem; */
     width: 95%;
     border:solid 1px var(--extraL);
     border-radius: 10px;
@@ -172,7 +178,7 @@ progress{
     row-gap: 10px;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    /* height: auto; */
     width: 70%;
     margin: 20px 0px;
 }
@@ -204,8 +210,10 @@ progress{
 
 /*SECCION DE LA DERECHA*/
 .subContR{
+    border:solid 1px var(--blueB);
+    border-radius: 10px;
     background-color: var(--extraL);
-    width: 33.4%;
+    grid-column: 3/4;
     overflow-y: auto;
 }
 
@@ -253,7 +261,7 @@ progress{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 12rem;
+    /* height: 12rem; */
 }
 
 .estudi p{
@@ -278,7 +286,7 @@ progress{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 12rem;
+    /* height: 12rem; */
 }
 .tinca{
     background-color: var(--ligth);
@@ -312,19 +320,25 @@ progress{
 }
 
 @media (min-width:360px) and (max-width: 1038px) {
-    .container{
+    /* .container{
         display: grid;
         grid-template-columns: 1fr  ;
         grid-template-rows: .2fr 1fr .5fr ;
-    }
+    } */
     .subContL{
+        grid-column: 1/4;
+        grid-row: 1/2;
         width: 100%;
     }
     .subContC{
+        grid-column: 1/4;
+        grid-row: 2/3;
         width: 100%;
         overflow-y: hidden;
     }
     .subContR{
+        grid-column: 1/4;
+        grid-row: 3/4;
         width: 100%;
         overflow-y: hidden;
     }
@@ -359,17 +373,24 @@ progress{
     .info{
         width:78%;
     }
-    .container{
-        grid-template-rows: .2fr 1fr .6fr ;
-    }
+    
     .perfil p{
         width: 80%;
     }
 }
 
 @media (min-width:360px) and (max-width:530px) {
-    .container{
-        grid-template-rows: .2fr 1fr .5fr ;
+    .subContL{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .subContC{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .subContR{
+        grid-column: 1/4;
+        grid-row: 3/4;
     }
     .perfil p{
         width: 95%;
