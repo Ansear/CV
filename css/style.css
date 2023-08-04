@@ -22,7 +22,7 @@ h2{
     width: 100%;
     background-color: var(--blueB);
     padding: 10px;
-    column-gap: 10px;
+    gap: 10px;
 }
 
 /*SECCION DE LA IZQUIERDA*/
